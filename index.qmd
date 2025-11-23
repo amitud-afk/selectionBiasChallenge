@@ -1,3 +1,4 @@
+<!--
 ---
 title: "Selection Bias & Missing Data Challenge"
 subtitle: "Creating a Statistics Meme: Write Your Own Functions"
@@ -7,7 +8,8 @@ execute:
   echo: false
   eval: true
 ---
-
+-->
+<!--
 # 🎨 Selection Bias & Missing Data Challenge
 
 ::: {.callout-important}
@@ -284,7 +286,7 @@ print(f"  - Use mid_tone_center around {tonal_stats['mean']:.2f} to emphasize av
 #| label: step4-block-letter
 #| echo: false
 #| fig-cap: "Block letter S representing selection bias"
-#| eval: false
+#| eval: true
 
 # UNCOMMENT AND USE THIS ONCE YOU'VE WRITTEN step4_create_block_letter.py:
 from step4_create_block_letter import create_block_letter_s
@@ -330,7 +332,7 @@ plt.show()
 #| label: step5-masked
 #| echo: false
 #| fig-cap: "Masked stippled image showing selection bias effect"
-#| eval: false
+#| eval: true
 
 # UNCOMMENT AND USE THIS ONCE YOU'VE WRITTEN step5_create_masked.py:
 from step5_create_masked import create_masked_stipple
@@ -378,7 +380,7 @@ plt.show()
 ```{python}
 #| label: create-final-meme
 #| echo: false
-#| eval: false
+#| eval: true
 
 # UNCOMMENT AND USE THIS ONCE YOU'VE WRITTEN create_meme.py:
 from create_meme import create_statistics_meme
@@ -391,12 +393,17 @@ create_statistics_meme(
       masked_stipple_img=masked_stipple,
       output_path="my_statistics_meme.png",
       dpi=150,
-      background_color="white"  # or "pink", "lightgray", etc.
+      background_color="lightgray"  # or "pink", "lightgray", etc.
  )
 ```
+-->
 
-## Your Final Submission
+## Selection Bias Meme
+![Four-panel statistics meme showing Reality (original image), My Model (stippled version), Selection Bias (letter S), and Estimate (masked stippled image)](my_statistics_meme.png)
 
+This meme demonstrates selection bias by showing how systematic missing data patterns distort our understanding of reality. The original image (Reality) represents the true population, while the stippled version (Your Model) shows our data collection through sampling. When selection bias removes data points in a systematic "S" pattern, the resulting estimate becomes biased and no longer accurately represents the true population, just as missing data in real-world studies can lead to incorrect conclusions when the missingness follows a non-random pattern.
+
+<!--
 ### Complete Checklist
 
 To complete this challenge, you must:
@@ -456,4 +463,4 @@ Your explanation should be 1-3 sentences. Here's an example:
 By completing this challenge, you'll have created a memorable visual representation of selection bias that demonstrates how systematic missing data patterns can distort our understanding of reality. The skills you've practiced—writing modular Python functions, image processing, and creating professional visualizations—are directly applicable to real-world data analysis projects.
 
 As you work with real datasets, remember the lesson of this meme: when data is missing in a systematic pattern rather than randomly, your estimates become biased. Recognizing and addressing selection bias is crucial for drawing valid conclusions from your data.
-
+-->
